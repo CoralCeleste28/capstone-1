@@ -1,16 +1,17 @@
+// These imports are for the local date and time
+// The third import formats the date and time
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Scanner;
 
-// Class named cellphone
+// Class named Transactions
 public class Transactions {
     // gets the current date and time
     LocalDate currentDate = LocalDate.now();
     LocalTime currentTime = LocalTime.now();
 
     // Defines the format patterns for date and time
-    DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("yyy-MM-dd");
+    DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
     DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("HH:mm:ss");
 
     // Officially formats the date and time
@@ -22,20 +23,19 @@ public class Transactions {
     private String time;
     private String transactionDescription;
     private String vendorName;
-    private int depositAmount;
+    private double depositAmount;
 
     // Parameterless Constructor
     public Transactions() {
-        this.date = "";
-        this.time = "";
+        this.date = LocalDate.now().format(dateFormatter);
+        this.time = LocalTime.now().format(timeFormatter);
         this.transactionDescription = "";
         this.vendorName = "";
         this.depositAmount = 0;
-
     }
 
     // This constructor has five parameters
-    public Transactions(String date, String time, String transactionDescription, String vendorName, int depositAmount){
+    public Transactions(String date, String time, String transactionDescription, String vendorName, double depositAmount){
         this.date = date;
         this.time = time;
         this.transactionDescription = transactionDescription;
@@ -61,7 +61,7 @@ public class Transactions {
         return vendorName;
     }
 
-    public int getDepositAmount(){
+    public double getDepositAmount(){
         return depositAmount;
     }
 
@@ -74,26 +74,32 @@ public class Transactions {
         this.time = time;
     }
 
-    public void setTransactionDescription(){
+    public void setTransactionDescription(String transactionDescription){
         this.transactionDescription = transactionDescription;
     }
 
-    public void setVendorName(){
+    public void setVendorName(String vendorName){
         this.vendorName = vendorName;
     }
 
-    public void setDepositAmount(){
+    public void setDepositAmount(Double depositAmount){
         this.depositAmount = depositAmount;
     }
 
-    public void addDeposit(String transactionDescription, String vendorName, int depositAmount){
+    public void addDeposit(String transactionDescription, String vendorName, double depositAmount){
+        this.date = LocalDate.now().format(dateFormatter);
+        this.time = LocalTime.now().format(timeFormatter);
+        this.transactionDescription = transactionDescription;
+        this.vendorName = vendorName;
+        this.depositAmount = depositAmount;
+
         System.out.print("Deposit Completed");
         System.out.println("Deposit Information Below: ");
         System.out.print("Date: " + formattedDate);
         System.out.print("Time: " + formattedTime);
-        System.out.print("Description: ");
-        System.out.print("Vendor: ");
-        System.out.print("Amount: ");
+        System.out.print("Description: " + transactionDescription);
+        System.out.print("Vendor: " + vendorName);
+        System.out.print("Amount: " + depositAmount);
     }
 
 }
