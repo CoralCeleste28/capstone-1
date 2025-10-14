@@ -1,12 +1,13 @@
 import java.util.Scanner;
+
 public class CoralConsulting {
     public static void main(String[] args) {
         // Declare Variables
+        // Makes a scanner named scanner that reads user input
         Scanner scanner = new Scanner(System.in);
+
         // This boolean is for the while do-while loop below
         boolean repeatLoop = true;
-        // Read next line and look at the first index
-        char homePageInput = scanner.next().trim().toLowerCase().charAt(0);
 
         // do-while loop
         do {
@@ -18,9 +19,19 @@ public class CoralConsulting {
                     (L) See Ledger
                     (X) Close Application
                     """);
+            // Read next line and look at the first index
+            char homePageInput = scanner.next().trim().toLowerCase().charAt(0);
 
             if (homePageInput == 'd') {
+                System.out.println("Enter Transaction Description: ");
+                String transactionDescription = scanner.nextLine().trim();
 
+
+                System.out.println("Enter Vendor Name: ");
+                String vendorName = scanner.nextLine().trim();
+
+                System.out.println("Enter Deposit Amount: ");
+                int depositAmount = Integer.parseInt(scanner.nextLine().trim());
             } else if (homePageInput == 'p') {
 
             } else if (homePageInput == 'l') {
