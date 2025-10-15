@@ -120,10 +120,15 @@ public class Transactions {
         }catch (IOException e){
             System.out.println("Error" + e.getMessage());
         }
-
     }
 
-
-
+    // Had to fix bug and overide reference numbers
+    @Override
+    // Make a method String named toString
+    // Doesn't have to be called. Default for printing
+    public String toString() {
+        // format for toString
+        return this.date + " | " + this.time + " | " + this.transactionDescription + " | " + this.vendorName + " | " + this.depositAmount;
+    }
 }
 

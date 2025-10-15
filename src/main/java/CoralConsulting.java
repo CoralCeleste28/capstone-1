@@ -1,3 +1,4 @@
+import java.util.List;
 import java.util.Scanner;
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -8,7 +9,9 @@ public class CoralConsulting {
     public static void main(String[] args) {
         // Declare Variables
         String filePath = "src/main/resources/transactions.csv";
-        ArrayList<Transactions> transactions = new ArrayList<>();
+
+        // Make a ledger named ledger with the transaction.csv
+        Ledger ledger = new Ledger(filePath);
 
         // Makes a scanner named scanner that reads user input
         Scanner scanner = new Scanner(System.in);
@@ -46,7 +49,6 @@ public class CoralConsulting {
                 // Calls addDeposit method in Transactions class
                 newDeposit.addDeposit(transactionDescription,vendorName,depositAmount);
                 // Adds a transaction to the list
-                transactions.add(newDeposit);
                 // Calls the saveTransaction method
                 // Opens the csv file and adds the line
                 newDeposit.saveTransaction(filePath);
@@ -63,10 +65,28 @@ public class CoralConsulting {
 
                 Transactions newDeposit = new Transactions();
                 newDeposit.addDeposit(transactionDescription,vendorName,depositAmount);
-                transactions.add(newDeposit);
                 newDeposit.savePaymentTransaction(filePath);
 
             } else if (homePageInput == 'l') {
+                System.out.print("""
+                (A) All
+                (D) Deposits
+                (P) Payments
+                (R) Reports
+                (0) Ledger
+                (H) Home Page
+                """);
+
+                homePageInput = scanner.next().trim().toLowerCase().charAt(0);
+
+                 switch (homePageInput){
+                     case 'a' -> ledger.all();
+                     case 'd' -> ledger.allDeposits();
+                     case 'p' -> ledger.allPayments();
+                     case 'r' -> ledger.reportsMenu(ledger);
+
+                 }
+
 
 
             } else if (homePageInput == 'x'){
