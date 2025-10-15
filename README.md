@@ -7,4 +7,7 @@ Created else-if loops for all options on main page
 Created Transactions class
 -Made setters
 -Made getters
--Made constructor 
+-Made constructors
+10/15/2025
+-Completed deposit option
+-Fixed a few bugs for formatting and clarity  

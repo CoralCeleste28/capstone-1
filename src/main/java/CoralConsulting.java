@@ -68,10 +68,28 @@ public class CoralConsulting {
 
                 // Create and log new deposit
                 Transactions newDeposit = new Transactions();
+                // Calls addDeposit method in Transactions class
                 newDeposit.addDeposit(transactionDescription,vendorName,depositAmount);
+                // Adds a transaction to the list
                 transactions.add(newDeposit);
+                // Calls the saveTransaction method
+                // Opens the csv file and adds the line
+                newDeposit.saveTransaction(filePath);
 
             } else if (homePageInput == 'p') {
+                System.out.println("Enter Payment Description: ");
+                String transactionDescription = scanner.nextLine().trim();
+
+                System.out.println("Enter Vendor Name: ");
+                String vendorName = scanner.nextLine().trim();
+
+                System.out.println("Enter Payment Amount: ");
+                double depositAmount = Double.parseDouble(scanner.nextLine().trim());
+
+                Transactions newDeposit = new Transactions();
+                newDeposit.addDeposit(transactionDescription,vendorName,depositAmount);
+                transactions.add(newDeposit);
+                newDeposit.saveTransaction(filePath);
 
             } else if (homePageInput == 'l') {
 

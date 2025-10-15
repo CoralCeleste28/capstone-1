@@ -1,5 +1,7 @@
 // These imports are for the local date and time
 // The third import formats the date and time
+import java.io.FileWriter;
+import java.io.IOException;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
@@ -93,14 +95,24 @@ public class Transactions {
         this.vendorName = vendorName;
         this.depositAmount = depositAmount;
 
-        System.out.print("Deposit Completed");
+        System.out.println("Deposit Completed");
         System.out.println("Deposit Information Below: ");
         System.out.println("Date: " + this.date);
         System.out.println("Time: " + this.time);
         System.out.println("Description: " + this.transactionDescription);
         System.out.println("Vendor: " + this.vendorName);
         System.out.println("Amount: " + this.depositAmount);
+    }
+
+    public void saveTransaction(String filePath){
+        try(FileWriter writer = new FileWriter(filePath,true)){
+             writer.write(this.date + " | " + this.time + " | " + this.transactionDescription + " | " + this.vendorName + " | " + this.depositAmount + "\n");
+        }catch (IOException e){
+            System.out.println("Error" + e.getMessage());
+        }
 
     }
+
+
 }
 
