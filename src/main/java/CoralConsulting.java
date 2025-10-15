@@ -68,29 +68,13 @@ public class CoralConsulting {
                 newDeposit.savePaymentTransaction(filePath);
 
             } else if (homePageInput == 'l') {
-                System.out.print("""
-                (A) All
-                (D) Deposits
-                (P) Payments
-                (R) Reports
-                (0) Ledger
-                (H) Home Page
-                """);
-
-                homePageInput = scanner.next().trim().toLowerCase().charAt(0);
-
-                 switch (homePageInput){
-                     case 'a' -> ledger.all();
-                     case 'd' -> ledger.allDeposits();
-                     case 'p' -> ledger.allPayments();
-                     case 'r' -> ledger.reportsMenu(ledger);
-
-                 }
-
-
+                // Calls ledgerMenu method
+                ledger.ledgerMenu(ledger);
 
             } else if (homePageInput == 'x'){
-
+                System.out.print("Goodbye!");
+                // Time to leave the loop!
+                repeatLoop = false;
             }
 
         } while (repeatLoop == true);

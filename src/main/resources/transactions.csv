@@ -1,9 +1,242 @@
 date|time|description|vendor|amount
-2025-01-01 | 10:13:25 | Paid for 2 monitors | Apple | 1000.00
-2025-02-28 | 05:24:32 | Received payment for videos | Coral Restoration Foundation | 5000.00
-2025-03-15 | 13:58:44 | Paid employee for the month | Debbie | 1000.00
-2025-04-29 | 22:12:05 | Received payment for business analysis | Lush Cosmetics | 2000.00
-2025-10-15 | 12:46:54 | fdsfdsfwsd | ggggg | 345.0
-2025-10-15 | 12:48:11 | vcxvx | dsdddddddd | 123.0
-2025-10-15 | 12:49:11 | dsfsfsd | ffffff | 333.0
-2025-10-15 | 13:13:13 | fffff | dddddd | -543.0
+2023-01-04|10:45:12|Received consulting payment|Tesla|3400.00
+2023-01-10|14:18:31|Paid office rent|Keller Properties|-1800.00
+2023-01-14|09:32:10|Received analysis fee|Lush Cosmetics|2000.00
+2023-01-18|13:42:57|Paid internet service|Spectrum|-90.00
+2023-01-21|15:25:41|Received brand marketing payment|Nike|3000.00
+2023-01-24|11:59:13|Paid software license|Microsoft|-180.00
+2023-01-27|10:16:45|Received web design revenue|Apple|2600.00
+2023-02-03|09:27:19|Paid printing expenses|Office Depot|-120.00
+2023-02-06|14:09:33|Received project retainer|Meta|2400.00
+2023-02-09|13:18:52|Paid employee salary|Debbie|-1000.00
+2023-02-11|12:23:41|Received social media contract|Instagram|1800.00
+2023-02-15|11:49:29|Paid utilities|City of Plano|-75.00
+2023-02-18|10:36:18|Received training payment|Coursera|800.00
+2023-02-21|14:08:49|Paid gas expense|Shell|-65.00
+2023-03-02|09:21:37|Received audit payment|Google|2200.00
+2023-03-05|13:47:12|Paid insurance|Allstate|-230.00
+2023-03-08|12:39:04|Received data report fee|Apple|1500.00
+2023-03-12|10:48:43|Paid marketing subscription|AdPro|-300.00
+2023-03-15|15:56:28|Received consultation income|Lush Cosmetics|2700.00
+2023-03-19|09:37:41|Paid legal services|LegalZoom|-250.00
+2023-03-23|11:50:59|Received app development payment|Tesla|3800.00
+2023-03-26|10:16:44|Paid domain renewal|GoDaddy|-30.00
+2023-04-01|09:28:33|Received course enrollment fee|Coursera|600.00
+2023-04-04|12:46:27|Paid internet bill|Spectrum|-85.00
+2023-04-07|13:12:54|Received website consultation|Google|1900.00
+2023-04-10|14:24:17|Paid cleaning service|CleanCo|-100.00
+2023-04-13|10:31:36|Received invoice payment|Apple|2500.00
+2023-04-17|12:42:59|Paid office supplies|Office Depot|-200.00
+2023-04-21|13:57:10|Received design retainer|Meta|2700.00
+2023-04-25|11:10:43|Paid subscription|Adobe|-60.00
+2023-04-29|14:39:25|Received analysis revenue|Tesla|3100.00
+2023-05-03|09:25:48|Paid water bill|City of Plano|-45.00
+2023-05-07|10:38:15|Received business grant|UNESCO|5000.00
+2023-05-10|11:46:32|Paid utilities|TXU Energy|-190.00
+2023-05-13|13:15:58|Received consulting bonus|Lush Cosmetics|2000.00
+2023-05-17|09:30:41|Paid insurance|Allstate|-220.00
+2023-05-21|10:17:54|Received training commission|Coursera|450.00
+2023-05-25|13:58:49|Paid rent|Keller Properties|-1800.00
+2023-05-28|14:19:36|Received client invoice|Google|3000.00
+2023-06-01|10:47:52|Paid web hosting|GoDaddy|-75.00
+2023-06-05|09:35:26|Received consulting retainer|Apple|2500.00
+2023-06-09|12:41:39|Paid employee bonus|Debbie|-400.00
+2023-06-13|14:32:23|Received invoice payment|Tesla|2000.00
+2023-06-17|10:55:18|Paid software license|Microsoft|-190.00
+2023-06-20|11:39:41|Received service fee|Meta|1800.00
+2023-06-23|13:12:57|Paid graphic designer|Fiverr|-250.00
+2023-06-27|09:28:32|Received partnership payment|Lush Cosmetics|3500.00
+2023-06-30|14:40:59|Paid rent|Keller Properties|-1800.00
+2023-07-04|11:33:19|Received analysis report fee|Apple|1600.00
+2023-07-08|10:22:53|Paid marketing expenses|AdPro|-400.00
+2023-07-12|09:41:07|Received data consulting fee|Google|2800.00
+2023-07-15|14:29:50|Paid employee wages|Debbie|-900.00
+2023-07-20|13:17:29|Received project revenue|Tesla|3100.00
+2023-07-23|09:54:31|Paid utilities|City of Plano|-85.00
+2023-07-28|10:42:15|Received analysis retainer|Meta|2300.00
+2023-08-01|09:18:49|Paid subscription|Zoom|-15.00
+2023-08-05|11:53:36|Received commission|Apple|800.00
+2023-08-09|13:22:45|Paid phone bill|Verizon|-120.00
+2023-08-13|14:30:52|Received invoice payment|Lush Cosmetics|1900.00
+2023-08-17|09:26:38|Paid internet|Spectrum|-90.00
+2023-08-21|10:58:11|Received bonus payment|Tesla|1000.00
+2023-08-25|14:15:27|Paid fuel expense|Shell|-70.00
+2023-08-29|13:43:14|Received project completion payment|Google|2500.00
+2023-09-03|09:57:45|Paid water bill|City of Plano|-50.00
+2023-09-06|11:24:23|Received consulting retainer|Meta|2700.00
+2023-09-09|10:46:11|Paid marketing subscription|AdPro|-180.00
+2023-09-12|09:38:55|Received invoice payment|Apple|2200.00
+2023-09-16|12:19:34|Paid utilities|TXU Energy|-200.00
+2023-09-20|11:07:41|Received training fee|Coursera|650.00
+2023-09-25|14:35:50|Paid rent|Keller Properties|-1800.00
+2023-10-01|09:28:16|Received partnership payment|Lush Cosmetics|3000.00
+2023-10-05|11:42:23|Paid legal services|LegalZoom|-270.00
+2023-10-10|13:18:59|Received consulting bonus|Tesla|1200.00
+2023-10-15|09:36:47|Paid insurance|Allstate|-230.00
+2023-10-20|10:47:32|Received client payment|Google|2800.00
+2023-10-25|11:59:55|Paid advertising fee|AdPro|-350.00
+2023-11-01|10:25:16|Received service income|Apple|2600.00
+2023-11-05|09:39:21|Paid employee wages|Debbie|-950.00
+2023-11-10|12:17:37|Received analysis revenue|Meta|2200.00
+2023-11-15|13:24:14|Paid electricity bill|TXU Energy|-210.00
+2023-11-20|09:58:33|Received course fee|Coursera|700.00
+2023-11-25|14:29:25|Paid internet|Spectrum|-85.00
+2023-12-01|09:37:47|Received invoice payment|Tesla|3100.00
+2023-12-06|13:15:52|Paid rent|Keller Properties|-1800.00
+2023-12-10|11:47:44|Received audit payment|Google|2700.00
+2023-12-15|09:42:55|Paid marketing expense|AdPro|-250.00
+2023-12-20|12:34:27|Received consulting payment|Apple|2300.00
+2023-12-24|10:29:49|Paid insurance|Allstate|-240.00
+2024-01-03|13:47:22|Received retainer|Meta|3200.00
+2024-01-08|10:58:31|Paid software license|Microsoft|-180.00
+2024-01-13|09:27:18|Received project payment|Tesla|2800.00
+2024-01-18|11:42:07|Paid office cleaning|CleanCo|-100.00
+2024-01-24|09:56:54|Received consulting income|Lush Cosmetics|2600.00
+2024-01-30|10:15:22|Paid phone bill|Verizon|-110.00
+2024-02-05|11:36:39|Received invoice payment|Google|2200.00
+2024-02-10|09:48:17|Paid utilities|City of Plano|-85.00
+2024-02-16|14:33:51|Received service fee|Apple|2500.00
+2024-02-22|10:25:44|Paid employee|Debbie|-950.00
+2024-02-28|13:47:09|Received project retainer|Meta|3000.00
+2024-03-06|09:18:26|Paid water bill|City of Plano|-50.00
+2024-03-12|12:29:11|Received analysis payment|Tesla|2700.00
+2024-03-18|10:55:59|Paid insurance|Allstate|-210.00
+2024-03-24|09:49:18|Received design income|Google|2400.00
+2024-03-31|11:20:37|Paid rent|Keller Properties|-1800.00
+2024-04-07|10:13:55|Received audit fee|Apple|2900.00
+2024-04-13|09:32:43|Paid subscription|Adobe|-65.00
+2024-04-19|14:29:16|Received client payment|Lush Cosmetics|3100.00
+2024-04-26|12:41:02|Paid phone bill|Verizon|-120.00
+2024-05-02|09:27:44|Received partnership payment|Meta|2700.00
+2024-05-08|13:12:26|Paid software license|Microsoft|-200.00
+2024-05-14|10:16:49|Received research payment|Tesla|2200.00
+2024-05-21|11:34:12|Paid internet|Spectrum|-85.00
+2024-05-28|09:25:37|Received course enrollment|Coursera|800.00
+2024-06-04|13:27:55|Paid utilities|TXU Energy|-190.00
+2024-06-10|11:58:33|Received invoice|Google|2300.00
+2024-06-16|09:32:19|Paid rent|Keller Properties|-1800.00
+2024-06-22|13:12:06|Received project retainer|Apple|2600.00
+2024-06-28|10:25:41|Paid insurance|Allstate|-240.00
+2024-07-04|09:41:37|Received audit payment|Lush Cosmetics|2900.00
+2024-07-10|13:29:45|Paid electricity|TXU Energy|-220.00
+2024-07-17|10:58:53|Received client payment|Meta|2500.00
+2024-07-24|11:36:20|Paid office supplies|Office Depot|-120.00
+2024-07-30|09:27:14|Received data project fee|Tesla|2700.00
+2024-08-06|13:12:45|Paid software subscription|Adobe|-60.00
+2024-08-12|10:26:18|Received research payment|Google|2000.00
+2024-08-19|09:47:52|Paid employee|Debbie|-950.00
+2024-08-25|11:52:44|Received consulting payment|Apple|2800.00
+2024-09-02|09:36:21|Paid rent|Keller Properties|-1800.00
+2024-09-08|10:48:19|Received training payment|Coursera|700.00
+2024-09-15|13:25:38|Paid marketing|AdPro|-400.00
+2024-09-21|09:57:23|Received analysis retainer|Meta|2600.00
+2024-09-28|10:15:19|Paid water bill|City of Plano|-50.00
+2024-10-04|13:47:42|Received invoice payment|Tesla|3000.00
+2024-10-10|11:25:31|Paid electricity bill|TXU Energy|-200.00
+2024-10-16|09:44:59|Received client revenue|Google|2200.00
+2024-10-22|14:19:13|Paid subscription|Zoom|-20.00
+2024-10-29|10:52:44|Received business revenue|Apple|2700.00
+2024-11-04|09:36:28|Paid phone bill|Verizon|-115.00
+2024-11-10|11:43:12|Received consulting payment|Lush Cosmetics|2300.00
+2024-11-16|10:55:09|Paid rent|Keller Properties|-1800.00
+2024-11-22|13:28:47|Received project completion fee|Meta|2800.00
+2024-11-28|09:52:16|Paid insurance|Allstate|-250.00
+2024-12-03|10:19:51|Received invoice|Google|2500.00
+2024-12-09|11:42:37|Paid electricity|TXU Energy|-210.00
+2024-12-15|13:24:16|Received project deposit|Tesla|2600.00
+2024-12-21|09:33:54|Paid subscription|Adobe|-55.00
+2024-12-27|11:47:25|Received consulting bonus|Apple|2200.00
+2025-01-05|09:41:37|Paid rent|Keller Properties|-1800.00
+2025-01-11|13:15:54|Received service payment|Meta|2500.00
+2025-01-17|09:24:22|Paid utilities|TXU Energy|-190.00
+2025-01-23|11:29:43|Received invoice|Google|2300.00
+2025-01-29|14:32:15|Paid water bill|City of Plano|-45.00
+2025-02-04|09:38:55|Received client payment|Apple|2700.00
+2025-02-10|10:42:19|Paid subscription|Zoom|-20.00
+2025-02-16|11:47:53|Received audit payment|Lush Cosmetics|3000.00
+2025-02-22|09:58:33|Paid marketing|AdPro|-250.00
+2025-02-28|13:15:10|Received course payment|Coursera|600.00
+2025-01-01|10:13:25|Paid for 2 monitors|Apple|-1000.00
+2025-01-02|09:47:10|Received client payment|Lush Cosmetics|4500.00
+2025-01-03|14:28:44|Purchased marketing materials|Vistaprint|-300.00
+2025-01-04|11:55:22|Paid for web hosting|GoDaddy|-150.00
+2025-01-05|17:33:51|Received consulting fee|Coral Consulting|2500.00
+2025-01-06|13:14:03|Paid office rent|Keller Properties|-1800.00
+2025-01-07|09:41:50|Received payment for analysis|Lush Cosmetics|2200.00
+2025-01-08|16:48:15|Bought printer ink|Office Depot|-120.00
+2025-01-09|08:37:59|Received training revenue|Coursera|800.00
+2025-01-10|10:22:25|Paid employee salary|Debbie|-900.00
+2025-01-11|11:54:43|Sold business report|Apple|1200.00
+2025-01-12|12:28:17|Paid software subscription|Adobe|-60.00
+2025-01-13|10:16:50|Received client deposit|Tesla|3000.00
+2025-01-14|15:04:38|Paid for domain renewal|Namecheap|-30.00
+2025-01-15|14:58:13|Received brand analysis payment|Nike|1700.00
+2025-01-16|09:46:42|Paid electricity bill|TXU Energy|-220.00
+2025-01-17|08:34:22|Received website project deposit|Google|3800.00
+2025-01-18|16:52:47|Paid cleaning services|CleanCo|-100.00
+2025-01-19|13:25:38|Received payment for consulting|Apple|2300.00
+2025-01-20|11:10:59|Bought computer accessories|Best Buy|-200.00
+2025-01-21|12:43:25|Received revenue for app design|Meta|4000.00
+2025-01-22|10:32:44|Paid for office snacks|Costco|-90.00
+2025-01-23|14:11:10|Received analysis fee|Coral Restoration Foundation|1200.00
+2025-01-24|11:37:35|Paid employee bonus|Debbie|-500.00
+2025-01-25|13:48:55|Received consultation fee|Starbucks|850.00
+2025-01-26|09:40:19|Paid marketing agency|AdPro|-700.00
+2025-01-27|10:59:44|Received project payment|Tesla|4100.00
+2025-01-28|15:28:33|Paid for photoshoot|Pixlr|-350.00
+2025-01-29|12:09:14|Received business review payment|Google|1800.00
+2025-01-30|13:17:57|Paid for internet bill|Spectrum|-85.00
+2025-02-01|10:46:54|Received research grant|UNESCO|6000.00
+2025-02-02|11:35:20|Paid subscription|Zoom|-15.00
+2025-02-03|12:28:30|Received data report payment|Meta|2100.00
+2025-02-04|09:48:12|Paid water bill|City of Plano|-45.00
+2025-02-05|13:16:59|Received commission check|Lush Cosmetics|3400.00
+2025-02-06|15:39:24|Paid graphic designer|Freelancer|-400.00
+2025-02-07|12:41:57|Received course enrollment|Coursera|500.00
+2025-02-08|10:54:20|Paid fuel for delivery|Shell|-60.00
+2025-02-09|11:29:17|Received small project fee|Coral Consulting|900.00
+2025-02-10|09:53:45|Paid office supplies|Office Depot|-130.00
+2025-02-11|14:27:58|Received social media contract|Instagram|2500.00
+2025-02-12|13:48:19|Paid water bill|City of Plano|-45.00
+2025-02-13|16:17:21|Received design retainer|Apple|1800.00
+2025-02-14|10:05:10|Paid photographer|Pixlr|-200.00
+2025-02-15|11:39:57|Received product review fee|Nike|1600.00
+2025-02-16|12:12:34|Paid office cleaning|CleanCo|-95.00
+2025-02-17|09:25:33|Received service fee|Tesla|3000.00
+2025-02-18|14:57:11|Paid software license|Microsoft|-180.00
+2025-02-19|10:44:09|Received marketing revenue|AdPro|2400.00
+2025-02-20|15:22:15|Paid insurance bill|Allstate|-250.00
+2025-02-21|11:34:28|Received web consultation fee|GoDaddy|700.00
+2025-02-22|12:47:16|Paid phone bill|Verizon|-120.00
+2025-02-23|09:56:44|Received project deposit|Lush Cosmetics|3800.00
+2025-02-24|10:43:39|Paid graphic design|Freelancer|-400.00
+2025-02-25|14:19:20|Received client payment|Coral Restoration Foundation|5000.00
+2025-02-26|12:35:07|Paid supplies|Office Depot|-250.00
+2025-02-27|09:42:18|Received bonus commission|Meta|2200.00
+2025-02-28|11:55:42|Paid rent|Keller Properties|-1800.00
+2025-03-01|13:46:55|Received invoice payment|Apple|3000.00
+2025-03-02|10:28:20|Paid taxes|IRS|-4000.00
+2022-03-03|12:17:32|Received data research fee|Google|1200.00
+2025-03-04|14:44:41|Paid electricity|TXU Energy|-220.00
+2025-03-05|11:09:12|Received project revenue|Tesla|4200.00
+2025-03-06|09:48:58|Paid utilities|City of Plano|-100.00
+2025-03-07|10:32:17|Received contract payment|Nike|1500.00
+2025-03-08|13:41:49|Paid design fee|Fiverr|-80.00
+2025-03-09|15:59:13|Received business grant|UNESCO|6000.00
+2025-03-10|11:46:02|Paid internet service|Spectrum|-90.00
+2025-03-11|12:12:18|Received service payment|Lush Cosmetics|2000.00
+2025-03-12|10:53:44|Paid printer maintenance|Office Depot|-120.00
+2024-03-13|14:26:59|Received subscription revenue|Coursera|300.00
+2025-03-14|13:37:50|Paid employee|Debbie|-1000.00
+2023-03-15|12:15:44|Received audit payment|Apple|2300.00
+2025-03-16|09:59:38|Paid fuel bill|Shell|-60.00
+2025-03-17|10:47:11|Received training income|Google|900.00
+2025-03-18|11:34:33|Paid website renewal|GoDaddy|-45.00
+2023-03-19|15:42:59|Received coaching fee|Meta|1000.00
+2025-09-20|12:28:55|Paid catering|Chick-fil-A|-200.00
+2025-09-21|09:17:23|Received review payment|Nike|1500.00
+2025-09-22|10:11:12|Paid cleaning|CleanCo|-100.00
+2025-09-23|11:19:39|Received client deposit|Lush Cosmetics|1800.00
+2025-09-25|13:32:27|Paid printer ink|Office Depot|-90.00
+2025-10-11|12:48:10|Received project balance|Tesla|2000.00
+2025-10-07|15:21:51|Paid shipping|UPS|-70.00

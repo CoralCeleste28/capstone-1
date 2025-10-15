@@ -14,3 +14,6 @@ Created Transactions class
 -Completed payment option
 -Started Ledger class 
 -Moved try catch for code clarity
+-Started reportsMenu method
+-Created switch statement 
+-Created methods to handle each choice in reports 
