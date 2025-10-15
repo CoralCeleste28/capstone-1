@@ -95,12 +95,12 @@ public class Transactions {
 
         System.out.print("Deposit Completed");
         System.out.println("Deposit Information Below: ");
-        System.out.print("Date: " + formattedDate);
-        System.out.print("Time: " + formattedTime);
-        System.out.print("Description: " + transactionDescription);
-        System.out.print("Vendor: " + vendorName);
-        System.out.print("Amount: " + depositAmount);
-    }
+        System.out.println("Date: " + this.date);
+        System.out.println("Time: " + this.time);
+        System.out.println("Description: " + this.transactionDescription);
+        System.out.println("Vendor: " + this.vendorName);
+        System.out.println("Amount: " + this.depositAmount);
 
+    }
 }
 

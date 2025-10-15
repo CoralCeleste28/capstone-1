@@ -9,10 +9,6 @@ public class CoralConsulting {
         // Declare Variables
         String filePath = "src/main/resources/transactions.csv";
         ArrayList<Transactions> transactions = new ArrayList<>();
-        Transactions newDeposit = new Transactions();
-        newDeposit.addDeposit(newDeposit.getTransactionDescription(), newDeposit.getVendorName(), newDeposit.getDepositAmount());
-        transactions.add(newDeposit);
-
 
         try {
             BufferedReader reader = new BufferedReader(new FileReader(filePath));
@@ -29,6 +25,9 @@ public class CoralConsulting {
                             String transactionDescription = parts[2];
                             String vendorName = parts[3];
                             double depositAmount = Double.parseDouble(parts[4]);
+
+                            Transactions t = new Transactions(date, time, transactionDescription, vendorName, depositAmount);
+                            transactions.add(t);
                 }
             }
             reader.close();
@@ -54,6 +53,8 @@ public class CoralConsulting {
                     """);
             // Read next line and look at the first index
             char homePageInput = scanner.next().trim().toLowerCase().charAt(0);
+            // scans the line look  into this!!
+            scanner.nextLine();
 
             if (homePageInput == 'd') {
                 System.out.println("Enter Transaction Description: ");
@@ -63,7 +64,13 @@ public class CoralConsulting {
                 String vendorName = scanner.nextLine().trim();
 
                 System.out.println("Enter Deposit Amount: ");
-                int depositAmount = Integer.parseInt(scanner.nextLine().trim());
+                double depositAmount = Double.parseDouble(scanner.nextLine().trim());
+
+                // Create and log new deposit
+                Transactions newDeposit = new Transactions();
+                newDeposit.addDeposit(transactionDescription,vendorName,depositAmount);
+                transactions.add(newDeposit);
+
             } else if (homePageInput == 'p') {
 
             } else if (homePageInput == 'l') {
