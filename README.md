@@ -11,3 +11,6 @@ Created Transactions class
 10/15/2025
 -Completed deposit option
 -Fixed a few bugs for formatting and clarity  
+-Completed payment option
+-Started Ledger class 
+-Moved try catch for code clarity

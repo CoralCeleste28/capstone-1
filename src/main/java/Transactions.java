@@ -95,8 +95,7 @@ public class Transactions {
         this.vendorName = vendorName;
         this.depositAmount = depositAmount;
 
-        System.out.println("Deposit Completed");
-        System.out.println("Deposit Information Below: ");
+        System.out.println("Transaction Information Below: ");
         System.out.println("Date: " + this.date);
         System.out.println("Time: " + this.time);
         System.out.println("Description: " + this.transactionDescription);
@@ -106,12 +105,24 @@ public class Transactions {
 
     public void saveTransaction(String filePath){
         try(FileWriter writer = new FileWriter(filePath,true)){
-             writer.write(this.date + " | " + this.time + " | " + this.transactionDescription + " | " + this.vendorName + " | " + this.depositAmount + "\n");
+            writer.write(this.date + " | " + this.time + " | " + this.transactionDescription + " | " + this.vendorName + " | " + this.depositAmount + "\n");
         }catch (IOException e){
             System.out.println("Error" + e.getMessage());
         }
 
     }
+
+    public void savePaymentTransaction(String filePath){
+        // changes the value of the user input to negative since it is a payment
+        this.depositAmount = this.depositAmount * -1;
+        try(FileWriter writer = new FileWriter(filePath,true)){
+            writer.write(this.date + " | " + this.time + " | " + this.transactionDescription + " | " + this.vendorName + " | " + this.depositAmount + "\n");
+        }catch (IOException e){
+            System.out.println("Error" + e.getMessage());
+        }
+
+    }
+
 
 
 }
