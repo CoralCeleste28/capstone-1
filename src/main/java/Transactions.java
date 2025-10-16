@@ -1,7 +1,9 @@
+// Used to write text to files
+import java.io.FileWriter;
+// Handles errors that might happen while writing to a file
+import java.io.IOException;
 // These imports are for the local date and time
 // The third import formats the date and time
-import java.io.FileWriter;
-import java.io.IOException;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
@@ -21,6 +23,7 @@ public class Transactions {
     String formattedTime = currentTime.format(timeFormatter);
 
     // Class Field Variables. Only exist here
+    // Variables that make up a transaction
     private String date;
     private String time;
     private String transactionDescription;
@@ -28,15 +31,19 @@ public class Transactions {
     private double depositAmount;
 
     // Parameterless Constructor
+    // Runs when a new transaction is made without the user inputs
     public Transactions() {
+        // Get the local date/time right now and format it to the indicated variable
         this.date = LocalDate.now().format(dateFormatter);
         this.time = LocalTime.now().format(timeFormatter);
+        // Initializes the field with its respective data type
         this.transactionDescription = "";
         this.vendorName = "";
         this.depositAmount = 0;
     }
 
     // This constructor has five parameters
+    // Passes the user input into the transaction and sets it as the variable
     public Transactions(String date, String time, String transactionDescription, String vendorName, double depositAmount){
         this.date = date;
         this.time = time;
@@ -88,7 +95,7 @@ public class Transactions {
         this.depositAmount = depositAmount;
     }
 
-    public void addDeposit(String transactionDescription, String vendorName, double depositAmount){
+    public void updateTransaction(String transactionDescription, String vendorName, double depositAmount){
         this.date = LocalDate.now().format(dateFormatter);
         this.time = LocalTime.now().format(timeFormatter);
         this.transactionDescription = transactionDescription;
@@ -103,20 +110,24 @@ public class Transactions {
         System.out.println("Amount: " + this.depositAmount);
     }
 
-    public void saveTransaction(String filePath){
+    public void saveDepositTransaction(String filePath){
         try(FileWriter writer = new FileWriter(filePath,true)){
-            writer.write(this.date + " | " + this.time + " | " + this.transactionDescription + " | " + this.vendorName + " | " + this.depositAmount + "\n");
+            writer.write(this.date + "|" + this.time + "|" + this.transactionDescription + "|" + this.vendorName + "|" + this.depositAmount + "\n");
         }catch (IOException e){
             System.out.println("Error" + e.getMessage());
         }
 
     }
-
     public void savePaymentTransaction(String filePath){
         // changes the value of the user input to negative since it is a payment
         this.depositAmount = this.depositAmount * -1;
+
+
+        //***********************
+        // Try catch with resources
+        // Try too create a new file writer named writer and have it add
         try(FileWriter writer = new FileWriter(filePath,true)){
-            writer.write(this.date + " | " + this.time + " | " + this.transactionDescription + " | " + this.vendorName + " | " + this.depositAmount + "\n");
+            writer.write(this.date + "|" + this.time + "|" + this.transactionDescription + "|" + this.vendorName + "|" + this.depositAmount + "\n");
         }catch (IOException e){
             System.out.println("Error" + e.getMessage());
         }

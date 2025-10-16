@@ -1,16 +1,12 @@
-import java.util.List;
+// import for scanner
 import java.util.Scanner;
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.ArrayList;
 
 public class CoralConsulting {
     public static void main(String[] args) {
         // Declare Variables
         String filePath = "src/main/resources/transactions.csv";
 
-        // Make a ledger named ledger with the transaction.csv
+        // Make a ledger object named ledger with the transaction.csv
         Ledger ledger = new Ledger(filePath);
 
         // Makes a scanner named scanner that reads user input
@@ -29,29 +25,34 @@ public class CoralConsulting {
                     (L) See Ledger
                     (X) Close Application
                     """);
-            // Read next line and look at the first index
-            char homePageInput = scanner.next().trim().toLowerCase().charAt(0);
-            // scans the line look  into this!!
-            scanner.nextLine();
+            // Read next line and look at the first index, disregard case format
+            char homePageInput = scanner.nextLine().trim().toLowerCase().charAt(0);
 
+            // == compares
+            // = sets value to
             if (homePageInput == 'd') {
                 System.out.println("Enter Transaction Description: ");
+                // Makes the user input into a variable
                 String transactionDescription = scanner.nextLine().trim();
 
                 System.out.println("Enter Vendor Name: ");
                 String vendorName = scanner.nextLine().trim();
 
                 System.out.println("Enter Deposit Amount: ");
+                // Had to parse this variable because it is a double
+                // turns the String (user input) into a double
+                // This is because of scanner.nextLine- it can only read strings
                 double depositAmount = Double.parseDouble(scanner.nextLine().trim());
 
                 // Create and log new deposit
+                // Creates a Transactions object using the transactions class by the name of newDeposit
                 Transactions newDeposit = new Transactions();
+                // newDeposit variable
                 // Calls addDeposit method in Transactions class
-                newDeposit.addDeposit(transactionDescription,vendorName,depositAmount);
-                // Adds a transaction to the list
+                newDeposit.updateTransaction(transactionDescription,vendorName,depositAmount);
                 // Calls the saveTransaction method
                 // Opens the csv file and adds the line
-                newDeposit.saveTransaction(filePath);
+                newDeposit.saveDepositTransaction(filePath);
 
             } else if (homePageInput == 'p') {
                 System.out.println("Enter Payment Description: ");
@@ -63,12 +64,13 @@ public class CoralConsulting {
                 System.out.println("Enter Payment Amount: ");
                 double depositAmount = Double.parseDouble(scanner.nextLine().trim());
 
-                Transactions newDeposit = new Transactions();
-                newDeposit.addDeposit(transactionDescription,vendorName,depositAmount);
-                newDeposit.savePaymentTransaction(filePath);
+                Transactions newPayment = new Transactions();
+                newPayment.updateTransaction(transactionDescription,vendorName,depositAmount);
+                newPayment.savePaymentTransaction(filePath);
 
             } else if (homePageInput == 'l') {
                 // Calls ledgerMenu method
+                // ledger object. ledgerMenu method (parameter ledger)
                 ledger.ledgerMenu(ledger);
 
             } else if (homePageInput == 'x'){
@@ -77,7 +79,7 @@ public class CoralConsulting {
                 repeatLoop = false;
             }
 
-        } while (repeatLoop == true);
+        } while (repeatLoop);
         scanner.close();
 
     }

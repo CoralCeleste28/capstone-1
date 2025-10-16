@@ -1,7 +1,6 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.sql.ResultSet;
 import java.time.LocalDate;
 import java.time.YearMonth;
 import java.time.format.DateTimeFormatter;
@@ -10,8 +9,10 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Ledger {
-    // Makes a list named Transactions
-    private List<Transactions> transactions;
+    // Transactions are made up of 5 class field variables
+    // The ledger is made up of a list of transactions
+    // The transactions as defined bt the information in the transactions class
+    private final List<Transactions> transactions;
 
     Scanner scanner = new Scanner(System.in);
 
@@ -91,6 +92,8 @@ public class Ledger {
 
     public void allDeposits () {
         for (Transactions tempTransactions : this.transactions){
+            // This will reorganize the file by date
+            // for(int i = Transactions.size() -1; i >= 0; i--)
             if (tempTransactions.getDepositAmount() > 0 ){
                 System.out.println(tempTransactions);
             }
