@@ -83,8 +83,11 @@ private final List<Transactions> transactions;
         }
     }
 
-
-
+LESSONS LEARNED
+1. Break it down- Not just by layout but also the parts inside
+2. Think about OOP- Consider what objects will be needed 
+3. Think like a computer- Don't over think things like making the payments negative or the header on top of the file
+4. Walk though the code to find bugs 
 
 10/10/2025- Made transactions.csv file and added 4 items
 Started creating the homepage
@@ -115,3 +118,4 @@ Created Transactions class
 10/17/2025
 - Formatted text for clarity
 - Added images to read me and my interesting code
+- Added lessons learned
