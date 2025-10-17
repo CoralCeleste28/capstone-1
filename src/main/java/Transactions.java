@@ -28,7 +28,7 @@ public class Transactions {
     private String time;
     private String transactionDescription;
     private String vendorName;
-    private double depositAmount;
+    private double transactionAmount;
 
     // Parameterless Constructor
     // Runs when a new transaction is made without the user inputs
@@ -39,7 +39,7 @@ public class Transactions {
         // Initializes the field with its respective data type
         this.transactionDescription = "";
         this.vendorName = "";
-        this.depositAmount = 0;
+        this.transactionAmount = 0;
     }
 
     // This constructor has five parameters
@@ -49,7 +49,7 @@ public class Transactions {
         this.time = time;
         this.transactionDescription = transactionDescription;
         this.vendorName = vendorName;
-        this.depositAmount = depositAmount;
+        this.transactionAmount = depositAmount;
     }
 
     // Getters
@@ -70,8 +70,8 @@ public class Transactions {
         return vendorName;
     }
 
-    public double getDepositAmount(){
-        return depositAmount;
+    public double getTransactionAmount(){
+        return transactionAmount;
     }
 
     // Setters
@@ -91,8 +91,8 @@ public class Transactions {
         this.vendorName = vendorName;
     }
 
-    public void setDepositAmount(Double depositAmount){
-        this.depositAmount = depositAmount;
+    public void setTransactionAmount(Double transactionAmount){
+        this.transactionAmount = transactionAmount;
     }
 
     public void updateTransaction(String transactionDescription, String vendorName, double depositAmount){
@@ -100,7 +100,7 @@ public class Transactions {
         this.time = formattedTime;
         this.transactionDescription = transactionDescription;
         this.vendorName = vendorName;
-        this.depositAmount = depositAmount;
+        this.transactionAmount = depositAmount;
 
         System.out.println("------------------------------------");
         System.out.println("Transaction Information Below: ");
@@ -108,14 +108,14 @@ public class Transactions {
         System.out.println("Time: " + this.time);
         System.out.println("Description: " + this.transactionDescription);
         System.out.println("Vendor: " + this.vendorName);
-        System.out.println("Amount: " + this.depositAmount);
+        System.out.println("Amount: " + this.transactionAmount);
         System.out.println("------------------------------------");
     }
 
     public void saveDepositTransaction(String filePath){
         //
         try(FileWriter writer = new FileWriter(filePath,true)){
-            writer.write(this.date + "|" + this.time + "|" + this.transactionDescription + "|" + this.vendorName + "|" + this.depositAmount + "\n");
+            writer.write(this.date + "|" + this.time + "|" + this.transactionDescription + "|" + this.vendorName + "|" + this.transactionAmount + "\n");
         }catch (IOException e){
             System.out.println("Error" + e.getMessage());
         }
@@ -123,12 +123,12 @@ public class Transactions {
     }
     public void savePaymentTransaction(String filePath){
         // changes the value of the user input to negative since it is a payment
-        this.depositAmount = this.depositAmount * -1;
+        this.transactionAmount = this.transactionAmount * -1;
         //***********************
         // Try catch with resources
         // Create a new file writer named writer and have it add
         try(FileWriter writer = new FileWriter(filePath,true)){
-            writer.write(this.date + "|" + this.time + "|" + this.transactionDescription + "|" + this.vendorName + "|" + this.depositAmount + "\n");
+            writer.write(this.date + "|" + this.time + "|" + this.transactionDescription + "|" + this.vendorName + "|" + this.transactionAmount + "\n");
             // Exception needed for writer and reader
         }catch (IOException e){
             System.out.println("Error" + e.getMessage());
@@ -141,7 +141,7 @@ public class Transactions {
     // Doesn't have to be called. Default for printing
     public String toString() {
         // format for toString
-        return this.date + " | " + this.time + " | " + this.transactionDescription + " | " + this.vendorName + " | " + this.depositAmount;
+        return this.date + " | " + this.time + " | " + this.transactionDescription + " | " + this.vendorName + " | " + this.transactionAmount;
     }
 }
 

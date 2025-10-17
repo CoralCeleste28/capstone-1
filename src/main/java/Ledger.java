@@ -95,7 +95,7 @@ public class Ledger {
         for (Transactions tempTransactions : this.transactions){
             // This will reorganize the file by date
             // for(int i = Transactions.size() -1; i >= 0; i--)
-            if (tempTransactions.getDepositAmount() > 0 ){
+            if (tempTransactions.getTransactionAmount() > 0 ){
                 System.out.println(tempTransactions);
             }
         }
@@ -103,7 +103,7 @@ public class Ledger {
 
     public void allPayments() {
         for (Transactions tempTransactions : this.transactions){
-            if (tempTransactions.getDepositAmount() < 0 ){
+            if (tempTransactions.getTransactionAmount() < 0 ){
                 System.out.println(tempTransactions);
             }
         }
