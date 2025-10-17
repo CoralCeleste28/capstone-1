@@ -86,11 +86,12 @@ public class Ledger {
             case 'd' -> ledger.allDeposits();
             case 'p' -> ledger.allPayments();
             case 'r' -> ledger.reportsMenu(ledger);
-
         }
     }
 
     public void allDeposits () {
+        // Read every transaction in the array list of transactions
+        // and treat each line as a transaction
         for (Transactions tempTransactions : this.transactions){
             // This will reorganize the file by date
             // for(int i = Transactions.size() -1; i >= 0; i--)
@@ -118,6 +119,7 @@ public class Ledger {
                 5) Search by Vendor
                 0) Back
                 """);
+
         char homePageInput = scanner.next().trim().toLowerCase().charAt(0);
         scanner.nextLine();
 

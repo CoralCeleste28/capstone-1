@@ -7,6 +7,7 @@ public class CoralConsulting {
         String filePath = "src/main/resources/transactions.csv";
 
         // Make a ledger object named ledger with the transaction.csv
+        // This is needed to call the ledger class methods
         Ledger ledger = new Ledger(filePath);
 
         // Makes a scanner named scanner that reads user input
@@ -31,14 +32,14 @@ public class CoralConsulting {
             // == compares
             // = sets value to
             if (homePageInput == 'd') {
-                System.out.println("Enter Transaction Description: ");
+                System.out.print("Enter Transaction Description: ");
                 // Makes the user input into a variable
                 String transactionDescription = scanner.nextLine().trim();
 
-                System.out.println("Enter Vendor Name: ");
+                System.out.print("Enter Vendor Name: ");
                 String vendorName = scanner.nextLine().trim();
 
-                System.out.println("Enter Deposit Amount: ");
+                System.out.print("Enter Deposit Amount: ");
                 // Had to parse this variable because it is a double
                 // turns the String (user input) into a double
                 // This is because of scanner.nextLine- it can only read strings
@@ -55,13 +56,13 @@ public class CoralConsulting {
                 newDeposit.saveDepositTransaction(filePath);
 
             } else if (homePageInput == 'p') {
-                System.out.println("Enter Payment Description: ");
+                System.out.print("Enter Payment Description: ");
                 String transactionDescription = scanner.nextLine().trim();
 
-                System.out.println("Enter Vendor Name: ");
+                System.out.print("Enter Vendor Name: ");
                 String vendorName = scanner.nextLine().trim();
 
-                System.out.println("Enter Payment Amount: ");
+                System.out.print("Enter Payment Amount: ");
                 double depositAmount = Double.parseDouble(scanner.nextLine().trim());
 
                 Transactions newPayment = new Transactions();

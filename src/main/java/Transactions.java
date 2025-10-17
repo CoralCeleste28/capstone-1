@@ -34,8 +34,8 @@ public class Transactions {
     // Runs when a new transaction is made without the user inputs
     public Transactions() {
         // Get the local date/time right now and format it to the indicated variable
-        this.date = LocalDate.now().format(dateFormatter);
-        this.time = LocalTime.now().format(timeFormatter);
+        this.date = formattedDate;
+        this.time = formattedTime;
         // Initializes the field with its respective data type
         this.transactionDescription = "";
         this.vendorName = "";
@@ -96,21 +96,24 @@ public class Transactions {
     }
 
     public void updateTransaction(String transactionDescription, String vendorName, double depositAmount){
-        this.date = LocalDate.now().format(dateFormatter);
-        this.time = LocalTime.now().format(timeFormatter);
+        this.date = formattedDate;
+        this.time = formattedTime;
         this.transactionDescription = transactionDescription;
         this.vendorName = vendorName;
         this.depositAmount = depositAmount;
 
+        System.out.println("------------------------------------");
         System.out.println("Transaction Information Below: ");
         System.out.println("Date: " + this.date);
         System.out.println("Time: " + this.time);
         System.out.println("Description: " + this.transactionDescription);
         System.out.println("Vendor: " + this.vendorName);
         System.out.println("Amount: " + this.depositAmount);
+        System.out.println("------------------------------------");
     }
 
     public void saveDepositTransaction(String filePath){
+        //
         try(FileWriter writer = new FileWriter(filePath,true)){
             writer.write(this.date + "|" + this.time + "|" + this.transactionDescription + "|" + this.vendorName + "|" + this.depositAmount + "\n");
         }catch (IOException e){
@@ -121,19 +124,18 @@ public class Transactions {
     public void savePaymentTransaction(String filePath){
         // changes the value of the user input to negative since it is a payment
         this.depositAmount = this.depositAmount * -1;
-
-
         //***********************
         // Try catch with resources
-        // Try too create a new file writer named writer and have it add
+        // Create a new file writer named writer and have it add
         try(FileWriter writer = new FileWriter(filePath,true)){
             writer.write(this.date + "|" + this.time + "|" + this.transactionDescription + "|" + this.vendorName + "|" + this.depositAmount + "\n");
+            // Exception needed for writer and reader
         }catch (IOException e){
             System.out.println("Error" + e.getMessage());
         }
     }
 
-    // Had to fix bug and overide reference numbers
+    // Had to fix bug and override reference numbers
     @Override
     // Make a method String named toString
     // Doesn't have to be called. Default for printing

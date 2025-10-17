@@ -25,3 +25,5 @@ Created Transactions class
 10/16/2025
 -Added notes to entire projects
 
+10/17/2025
+- Formatted text for clarity 
